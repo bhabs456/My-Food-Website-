@@ -32,11 +32,11 @@ body{
     height: 265px;
 }
 
-/* @media (max-width: 390px) {
+@media (max-width: 430px) {
     #home::before{
-        height: 39%;
+        height: 36%;
     }
-} */
+}
 
 @media (max-width: 550px) {
     #home{

@@ -32,6 +32,11 @@ body{
     display: none;
 }
 
+.navbar ul .item a:hover{
+    padding: 5px 12px;
+    background-color: white;
+}
+
 /* Home */
 
 

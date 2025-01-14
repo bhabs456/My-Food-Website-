@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     /* overflow: hidden; */
 }
@@ -29,16 +34,15 @@ body{
 
 /* Home */
 
-@media screen and (max-width: 422px) {
-    #home::before{
-        height: 28px;
-    }
-}
+
 
 #home{
     padding: 3px 80px;
-    height: 265px;
+    /* height: 265px; */
 }
+
+
+
 
 
 @media (max-width: 550px) {

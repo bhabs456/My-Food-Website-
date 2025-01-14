@@ -138,8 +138,8 @@ html{
 #home{
     display: flex;
     flex-direction: column;
-    padding: 3px 200px;
-    height: 290px;
+    padding: 0px 200px;
+    height: 281px;
     justify-content: center;
     align-items: center;
 }
@@ -150,7 +150,7 @@ html{
     position: absolute;
     top: 0;
     left: 0;
-    height: 28%;
+    height: 345px;
     width: 100%;
     z-index: -1;
     opacity: 0.88;
@@ -201,6 +201,7 @@ html{
                          "auto auto auto";
     row-gap: 30px;
     column-gap: 25px;
+    padding: 0 10px;
 }
 
 #food-container .box{

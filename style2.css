@@ -1,4 +1,8 @@
-/* Navbar */
+*{
+    margin: 0;
+    padding: 0;
+}
+    /* Navbar */
 .user-name h4{
     display: none;
 }
@@ -8,9 +12,17 @@
 }
 
 /* Home */
+
+/* @media (max-width: 2520px){
+    #home::before{
+        height: 30%;
+    }
+} */
+
+
 #home{
     padding: 3px 100px;
-    height: 265px;
+    /* height: 290px; */
 }
 
 #home h2{

@@ -4,6 +4,12 @@ body{
 
 /* Navbar */
 
+@media (max-width: 550px){
+    .userphoto img{
+        height: 40px;
+    }
+}
+
 .navbar ul{
     gap: 5px;
 }
@@ -23,8 +29,10 @@ body{
 
 /* Home */
 
-#home::before{
-    overflow: hidden;
+@media screen and (max-width: 422px) {
+    #home::before{
+        height: 28px;
+    }
 }
 
 #home{
@@ -32,11 +40,6 @@ body{
     height: 265px;
 }
 
-@media (max-width: 430px) {
-    #home::before{
-        height: 36%;
-    }
-}
 
 @media (max-width: 550px) {
     #home{

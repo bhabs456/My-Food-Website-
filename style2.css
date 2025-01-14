@@ -1,0 +1,56 @@
+/* Navbar */
+.user-name h4{
+    display: none;
+}
+
+.searchuserdetails{
+    gap: 15px;
+}
+
+/* Home */
+#home{
+    padding: 3px 100px;
+    height: 265px;
+}
+
+#home h2{
+    text-align: center;
+    font-size: 30px;
+}
+
+#home p{
+    text-align: center;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+
+/* Top Choices */
+#food-container{
+    display: grid;
+    grid-template-areas: "auto"
+                         "auto"
+                         "auto"
+                         "auto"
+                         "auto"
+                         "auto";
+    gap: 20px;
+}
+
+/* Our Spomsor */
+#sponsors{
+    height: 420px;
+    overflow: hidden;
+}
+
+.companies{
+    gap: 25px;
+    position: relative;
+    top: 20px;
+    padding: 0 10px;
+}
+
+
+/* Login */
+
+/* Footer */

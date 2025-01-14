@@ -1,0 +1,347 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.logo{
+    height: 53px;
+    width: auto;
+    /* border: 2px black solid;  */
+    margin-left: 3px;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.logo img{
+    background: none;
+    height: 53px;
+    width: auto;
+    background-color: transparent;
+    /* clip-path: inset(4px 23px); */
+}
+
+
+.navbar{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 0px 0 3px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    
+}
+
+.navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.1;
+}
+
+.navstart{
+    display: flex;
+    position: sticky;
+}
+
+.navbar ul{
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.navbar ul .item{
+    list-style: none;
+    font-size: 1rem;
+}
+
+.navbar ul .item a{
+    color: white;
+    text-decoration: none;
+    font-family: "Fira Sans", serif;
+    font-weight: 500;
+    padding: 3px 10px;
+    border-radius: 20px;
+    /* font-family: "Playwrite AU SA", serif; */
+}
+
+.navbar ul .item a:hover{
+    color: black;
+    background-color: white;
+}
+
+.navbar-wrapper{
+    position: sticky;
+    left: 1940px;  
+}
+
+.searchuserdetails{
+    display: flex;
+    gap: 30px;
+}
+
+.navbar-wrapper .searchuserdetails{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchbar input{
+    width: 270px;
+    padding: 0.3rem;
+    border-radius: 16px;
+    border: 2px solid white;
+}   
+
+.userdetails{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.userphoto{
+    padding-top: 5.5px;
+}
+
+.userphoto img{
+    height: 53px;
+    cursor: pointer;
+}
+
+.user-name h4{
+    color: white;
+    font-family: "Fira Sans", serif;
+    font-weight: 500;
+    cursor: pointer;
+    padding-right: 5px;
+}
+
+.user-name h4:hover{
+    text-decoration: underline;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 290px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    background: url(images/bg2.jpg) center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 28%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.88;
+}
+
+#home h2{
+    font-size: 2.5rem;
+    background: linear-gradient(to right, brown, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-family: "Rubik", serif;
+}
+
+#home p{
+    font-family: "Fira Sans", serif;
+    font-weight: 500;
+    color: black;
+    line-height: 22px;
+}
+
+#home .btn{
+    margin-top: 12px;
+    padding: 5px 10px;
+    font-family: "Fira Sans", serif;
+    border-radius: 16px;
+    color: white;
+    border: transparent;
+    background: linear-gradient(to right, brown, black);
+    cursor: pointer;
+}
+
+#home .btn:hover{
+    color: gainsboro;
+}
+
+#foodsection .foodsection-h2{
+    font-family: "Rubik", serif;
+    margin: 20px 0;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#food-container{
+    display: grid;
+    grid-template-areas: "auto auto auto"
+                         "auto auto auto";
+    row-gap: 30px;
+    column-gap: 25px;
+}
+
+#food-container .box{
+    border: 3px solid black;
+    border-radius: 16px;
+    background-color: rgba(128, 128, 128, 0.10);
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    padding: 10px 23px 8px;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+
+#food-container .box img{
+    height: 175px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#food-container .box:hover{
+    background-color: rgba(128, 128, 128, 0.3) ;
+}
+
+#food-container .box .box-h2{
+    font-family: "Fira Sans", serif;
+    padding-top: 5px;
+    font-size: 1.4  rem;
+}
+
+#food-container .box p{
+    font-family: "Fira Sans", serif;
+    font-weight: 400;
+    padding-top: 5px;
+    text-align: center;
+}
+
+#sponsors{
+    /* border: 2px solid red; */
+    position: relative; 
+    height: 280px;
+    bottom: -20px;
+}
+
+#sponsors::before{
+    position: absolute; 
+    content: "";
+    background: url(images/bg3.jpg) center/cover;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.80;
+}
+
+.sponsors-h2{
+    font-family: "Rubik", serif;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.companies{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    position: relative;
+    /* bottom: 15px; */
+    height: 177px;
+    /* border: 2px solid pink; */
+}
+
+.companies .companies-logo{
+    /* border: 2px solid red; */
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.companies-logo img{
+    height: 130px;
+    border-radius: 16px;
+    /* border: 2px solid salmon; */
+}
+
+#signupform{
+    height: 271px;
+    position: relative;
+    top: 20px;
+}
+
+#signupform::before{
+    position: absolute; 
+    content: "";
+    background: url(images/bg4.avif) ;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.60;
+}
+
+#signupform .signupform-h2{
+    font-family: "Rubik", serif;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.details{
+    font-family: "Fira Sans", serif;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 34px;
+}
+
+.details input{
+    width: 100%;
+    border-radius: 6px;
+    padding: 0.4rem;
+    margin-bottom: 20px;
+}
+
+footer{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    padding: 5px;
+}
+
+footer h4{
+    color: white;
+    font-family: "Fira Sans", serif;
+    font-size: 1.1rem;  
+}

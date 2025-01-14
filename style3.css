@@ -1,0 +1,98 @@
+body{
+    /* overflow: hidden; */
+}
+
+/* Navbar */
+
+.navbar ul{
+    gap: 5px;
+}
+
+.navstart ul .item a{
+    font-size: 0.8rem;
+    padding: 0 7px;
+}
+
+.user-name h4{
+    display: none;
+}
+
+.searchuserdetails .searchbar{
+    display: none;
+}
+
+/* Home */
+
+#home::before{
+    overflow: hidden;
+}
+
+#home{
+    padding: 3px 80px;
+    height: 265px;
+}
+
+/* @media (max-width: 390px) {
+    #home::before{
+        height: 39%;
+    }
+} */
+
+@media (max-width: 550px) {
+    #home{
+        padding: 3px 40px;
+    }
+}
+
+#home h2{
+    text-align: center;
+    font-size: 30px;
+}
+
+#home p{
+    text-align: center;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+
+/* Top Choices */
+#food-container{
+    display: grid;
+    grid-template-areas: "auto"
+                         "auto"
+                         "auto"
+                         "auto"
+                         "auto"
+                         "auto";
+    gap: 20px;
+}
+
+/* Our Spomsor */
+#sponsors{
+    height: 420px;
+    overflow: hidden;
+}
+
+@media (max-width: 650px) {
+    #sponsors{
+        height: 570px;
+    }
+}
+
+@media (max-width: 449px) {
+    #sponsors{
+        height: 895px;
+    }
+}
+
+.companies{
+    gap: 25px;
+    position: relative;
+    top: 20px;
+}
+
+
+/* Login */
+
+/* Footer */
